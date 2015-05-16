@@ -1,0 +1,16 @@
+footer.footer.grid__col.grid__col--1-of-1
+    section.foot.container.grid__col--centered
+        div.contact__me
+            span - ارتباط با من
+            ul
+                li
+                    a(href="http://telegram.me/#{ telegram_username }") تلگرام
+                li
+                    a(href="mailto:#{ email }") جیمیل
+
+        div.portofilo__me
+            span - آخرین کارها
+            ul
+                - for (var portofilo = 0; portofilo < 3; portofilo++)
+                    li
+                        a(href="/") نمونه کار

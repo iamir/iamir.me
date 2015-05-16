@@ -1,0 +1,40 @@
+// Icons:
+// =====
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: $font-icon;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-clock:before {
+	content: "\e94f";
+}
+
+.icon-quotes-right:before {
+	content: "\e978";
+}
+
+.icon-mail:before {
+	content: "\ea83";
+}
+
+.icon-instagram:before {
+	content: "\ea90";
+}
+
+.icon-twitter:before {
+	content: "\ea92";
+}
+
+.icon-github:before {
+	content: "\eab1";
+}

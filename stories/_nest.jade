@@ -1,0 +1,11 @@
+main.main__content.container(role="main")
+	article.post__blog.grid__col.grid__col--1-of-1.grid--no-gutter
+		h2.post__title= title
+		h4.post__date= fadate
+			i.icon-clock
+		!= yield
+
+		hr.post__break
+
+		if disqus_usernamee
+			!= partial("../_require/comments")

@@ -1,0 +1,30 @@
+// Variables:
+// =========
+
+
+// Configuration
+$direction   : rtl;
+$line-height : 2.618em;
+
+// Fonts
+$font-iranian : "Iranian";
+$font-mitra   : "Mitra";
+$font-icon    : "icons";
+
+// Grid
+$container	           : 42.5rem;
+$gutter-width          : 20px;
+$breakpoint-large      : 58rem;
+$breakpoint-medium     : 36rem;
+$breakpoint-small      : 20rem;
+$grid__name            : "gird";
+$grid_column_name      : "grid__col";
+
+// Colors
+$background    : #fcfcfc;
+$bg-highlight  : #e74c3c;
+$white         : #fff;
+$color         : #333;
+$color-hover   : #e74c3c;
+$text-color    : #333;
+$socials       : (twitter: #55ACEE, instagram: #2B5A83, github: #222, mail: #222);

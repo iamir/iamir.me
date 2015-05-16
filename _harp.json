@@ -1,0 +1,26 @@
+{
+	"globals": {
+		"site_title": "Amirhossein Eslami | امیرحسین اسلامی",
+		"description": "طراح و برنامه نویس وب | داستانی هایی از زندگی من",
+		"nickname": "امیرحسین اسلامی",
+		"site_url": "http://iamir.me",
+		"keywords": "امیرحسین,اسلامی,امیرحسین اسلامی,Amir,Amirhossein,Eslami,Designer,Ui,طراح,وبلاگ",
+		"site_type": "blog",
+		"includes": true,
+		"email": "es.amir1997@gmail.com",
+		"twitter_username": "dot_amir",
+		"github_username": "iamir",
+		"instagram_username": "i.amir76",
+		"telegram_username": "iamir76",
+		"disqus_usernamee": "iamir",
+		"author": "Amirhossein Eslami",
+		"img_profile": "http://sallar.me/wp-content/themes/sallar/static/img/logo.svg",
+		"analytics": "UA-51694552-2",
+		"more_post": "ادامه نوشته...",
+		"version": "1.0.0"
+	},
+    "sitemap": {
+		"enabled": true,
+		"changefreq": "daily"
+    }
+}

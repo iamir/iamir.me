@@ -1,0 +1,31 @@
+if current.source != "rss" && current.source != "sitemap"
+    doctype
+    html(lang="en")
+        head
+            != partial("_require/head")
+        
+        body
+
+        if current.path[0] == "index"
+            != partial("_require/header")
+            != partial("_require/articles")
+            != partial("_require/footer")
+
+        if current.path[0] != "index" && current.path[0] != "404"
+            != partial("_require/header")
+            if current.source == 'index'
+                main.main__content.container(role="main")
+                    != yield
+
+            if current.path[0] == 'stories' && current.source != 'index'
+                != partial(current.path[0] + "/_nest", { yield: yield })
+
+            != partial("_require/footer")
+        
+        if current.path[0] === "404"
+            != yield
+
+        if analytics
+            != partial("_require/analytics")
+else
+    != yield

@@ -1,0 +1,24 @@
+- var stories = []
+for article, slug in public.stories._data
+    if article.date
+        - article.slug = slug
+        - stories.push(public.stories._data[slug])
+
+section#content.container
+    for article in stories.sort(function(a,b){ a = new Date(a.date); b = new Date(b.date); return b<a?-1:b>a?1:0; }).slice(0, postlimit)
+        article.post__blog.grid__col.grid__col--1-of-1.grid--no-gutter
+            h2.post__title
+                a(href="/stories/#{ article.slug }")= article.title
+            h4.post__date= article.fadate
+                i.icon-clock
+            p.post__content= article.description
+            
+            if disqus_username && article.disqus_username !== false
+                a(href="/stories/#{ article.slug }")
+                    b= more_post
+            hr.post__break
+
+        if postlimit < stories.length
+            a.all__posts(href="/stories") نوشته های قبلی
+        
+            

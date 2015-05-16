@@ -1,0 +1,33 @@
+{
+  "name": "iamir.me",
+  "version": "1.0.0",
+  "description": "iAMiR Weblog.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamir/iamir.git"
+  },
+  "keywords": [
+    "Amir Eslami",
+    "iAMiR",
+    "iamir.me",
+    "design",
+    "blog",
+    "ghost platform",
+    "gulp",
+    "scss",
+    "jade"
+  ],
+  "author": "Amir Eslami <es.amir1997@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iamir/iamir/issues"
+  },
+  "homepage": "https://github.com/iamir/iamir",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.0"
+  }
+}

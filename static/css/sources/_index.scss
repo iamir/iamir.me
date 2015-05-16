@@ -1,0 +1,252 @@
+// index PAGE:
+// =========
+
+html {
+	font-family: $font-iranian,$font-mitra, Lato, Droid Sans, Helvetica, sans-serif;
+	direction: $direction;
+	line-height: $line-height;
+	text-rendering: optimizeLegibility;
+	@include font-smoothing();
+	letter-spacing: -.025rem;
+	word-spacing: -.05rem;
+}
+body {
+	background: $background;
+	color: $color;
+}
+*{
+	box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: $color;
+    &:hover {
+    	color: $color-hover;
+    }
+}
+::selection {
+    background: $bg-highlight;
+    color: #fff;
+    text-shadow: none;
+}
+picture{
+	display: block;
+	line-height: 0;
+}
+img, iframe{
+	max-width: 100%;
+	margin: 0 auto;
+}
+ul{
+	list-style-type: none;
+	li{
+		&::before{
+			content: '';
+			display: inline-block;
+			vertical-align: baseline;
+		}
+	}
+}
+
+.container {
+	width: $container;
+	display: block;
+	max-width: 100%;
+	position: relative;
+	margin: 2rem auto;
+}
+.title-head {
+	display: block;
+	position: relative;
+	&:hover {
+		color: $color;
+	}
+}
+.logo {
+	display: inline-block;
+  	background: url(http://sallar.me/wp-content/themes/sallar/static/img/logo.svg);
+  	background-size: 100%;
+  	vertical-align: middle;
+  	width: 3.5rem;
+  	height: 3.6rem;
+}
+.title-name {
+	font-size: 2rem;
+	font-family: $font-mitra;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.decs__head {
+	font-family: $font-mitra, Lato, Droid Sans;
+	font-size: 1.200rem;
+  	line-height: 1.618em;
+  	color: #888;
+  	margin-top: 5px;
+}
+#content {
+	display: block;
+	position: relative;
+	top: 2em;
+}
+.post__blog {
+
+	.post__title {
+		font-size: 2rem;
+		font-family: $font-mitra;
+		&:hover {
+			color: $color-hover;
+		}
+	}
+
+	.post__date {
+		display: block;
+		font-size: 1.25rem;
+		font-family: $font-mitra;
+		color: #777;
+		margin: -20px 0 0;
+		i {
+			float: right;
+			margin: 8px 0 0 5px;
+		}
+	}
+
+	.post__content, p {
+		display: block;
+		font-size: 1.1em;
+		font-family: $font-iranian, Lato, Droid Sans;
+		line-height: 1.777;
+		color: $text-color;
+		a {
+			color: $color-hover;
+			border-bottom: 1px dotted $color-hover;
+			&:hover {
+				color: $color / 1;
+				border-bottom: 1px dotted $color / 1;
+			}
+		}
+	}
+
+	.post__break {
+		position: relative;
+		display: block;
+		margin: 50px auto;
+		width: 200px;
+		height: 1px;
+		background: #ccc;
+		border: 0;
+	}
+}
+
+.page__navi {
+	font-family: $font-mitra;
+	font-size: 1.2em;
+	line-height: $line-height;
+	a {
+		border: 3px solid #e0e0e0;
+		padding: 2px 20px;
+		@include border-radius(20px);
+		&:hover {
+			color: $color * 2;
+		}
+	}
+	.last__page {
+		position: relative;
+		right: 0;
+	}
+	.next__page {
+		position: relative;
+		right: 20px;
+	}
+}
+.footer {
+	display: block;
+	background: #333;
+	padding: 20px 0;
+
+	.foot {
+		display: block;
+		position: relative;
+		margin: 0 auto;
+		.contact__me {
+			display: inline-block;
+			float: right;
+			width: 10rem;
+
+			span {
+				font-size: 1.100rem;
+				color: #aaa;
+			}
+
+			ul {
+				li {
+					line-height: 1.618;
+					a {
+						font-family: $font-mitra;
+						&::before {
+							content: ">";
+							position: relative;
+							font-family: 'Droid Sans', sans-serif;
+							font-size: 15px;
+							margin: 0 0 0 5px;
+						}
+						&:hover {
+							color: #999;
+						}
+					}
+				}
+			}
+		}
+
+		.portofilo__me {
+			width: 10rem;
+			display: inline-block;
+
+			span {
+				font-size: 1.100rem;
+				color: #aaa;
+			}
+
+			ul {
+				li {
+					line-height: 1.618;
+					a {
+						font-family: $font-mitra;
+						&::before {
+							content: ">";
+							position: relative;
+							font-family: 'Droid Sans', sans-serif;
+							font-size: 15px;
+							margin: 0 0 0 5px;
+						}
+						&:hover {
+							color: #999;
+						}
+					}
+				}
+			}
+		}
+	}
+	a {
+		color: #888;
+	}
+}
+.socials {
+	position: relative;
+	display: inline-block;
+	font-size: 1.618rem;
+	margin: -20px 0 0 10px;
+	vertical-align: middle;
+	color: #555;
+	&:hover{
+		@each $name, $value in $socials {
+			&.icon-#{$name} {
+				color: $value;
+			}
+		}
+	}
+}
+.keep-calm {
+	display: block;
+	margin: 0 auto;
+    width: 100%;
+}
